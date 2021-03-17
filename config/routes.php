@@ -13,11 +13,11 @@
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
 
-namespace BlnSoftware\Subdomains\Config;
+namespace Blnsoftware\Subdomains\Config;
 
 use App\BridgeLoanNetwork\Http\Middleware\CsrfProtectionMiddleware;
-use BlnSoftware\Subdomains\Routing\Route\SubdomainRoute;
-use BlnSoftware\Subdomains\Middleware\SubdomainMiddleware;
+use Blnsoftware\Subdomains\Routing\Route\SubdomainRoute;
+use Blnsoftware\Subdomains\Middleware\SubdomainMiddleware;
 
 use Cake\Routing\Router;
 
@@ -30,7 +30,7 @@ if (is_array($subdomains)) {
             $routes->registerMiddleware('csrf', new CsrfProtectionMiddleware([
                 'httpOnly' => true
             ]));
-            $routes->fallbacks('BlnSoftware/Subdomains.SubdomainRoute');
+            $routes->fallbacks('Blnsoftware/Subdomains.SubdomainRoute');
         });
     }
 }

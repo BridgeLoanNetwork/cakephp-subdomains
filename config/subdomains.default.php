@@ -23,7 +23,7 @@
 /*/
 
 return array(
-    'BlnSoftware/Subdomains' => 
+    'Blnsoftware/Subdomains' => 
         array('Subdomains' =>
             array('{SUBDOMAIN_1}', '{SUBDOMAIN_2}', /*...*/ '{SUBDOMAIN_N}')
         )

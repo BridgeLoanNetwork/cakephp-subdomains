@@ -23,13 +23,13 @@ composer require blnsoftware/cakephp-subdomains
 Load the plugin by running following command in terminal:
 
 ```
-bin/cake plugin load BlnSoftware/cakephp-subdomains -b -r
+bin/cake plugin load Blnsoftware/cakephp-subdomains -b -r
 ```
 
 Or by manually adding following line to your app's `config/bootstrap.php`:
 
 ```php
-Plugin::load('BlnSoftware/cakephp-subdomains', ['bootstrap' => true, 'routes' => true]);
+Plugin::load('Blnsoftware/cakephp-subdomains', ['bootstrap' => true, 'routes' => true]);
 ```
 
 ## Configuration
@@ -46,7 +46,7 @@ Alternatively, you can create a `config/subdomains.php` file in your main CakePH
 
 ```php
 return [
-    'BlnSoftware/subdomains' => [
+    'Blnsoftware/subdomains' => [
 		'Subdomains' => [
 			'{SUBDOMAIN_1}', 
 			'{SUBDOMAIN_2}', 
@@ -61,7 +61,7 @@ In case you have a subdomain for testing, you can easily translate that subdomai
 
 ```php
 return [
-    'BlnSoftware/subdomains' => [
+    'Blnsoftware/subdomains' => [
 		'Subdomains' => [
 			'subdomain1', 
 			'subdomain2', 

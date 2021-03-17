@@ -1,48 +1,30 @@
 {
     "name": "blnsoftware/cakephp-subdomains",
     "description": "Custom Subdomain handling for CakePHP application using route prefixes.",
-    "keywords": [
-		"cakephp", 
-		"cakephp3",
-        "rcn-capital",
-        "subdomains"
-    ],
+    "type": "cakephp-plugin",
+    "keywords": ["cakephp", "cakephp3", "subdomains"],
     "homepage": "https://github.com/blnsoftware/cakephp-subdomains",
     "license": "MIT",
-    "type": "cakephp-plugin",
-    "authors": [
-        {
-            "name": "Daniel Marjos",
-            "email": "daniel.marjos@ticketnetwork.com",
-            "role": "Developer"
-        }
-    ],
+    "authors": [{
+        "name": "Daniel Marjos",
+        "email": "daniel.marjos@ticketnetwork.com",
+        "role": "Developer"
+    }],
     "require": {
         "php": ">=5.5.9",
         "cakephp/cakephp": "~3.3"
     },
-	"conflict": {
-		"multidimensional/subdomains": "*"
-	},
     "require-dev": {
         "phpunit/phpunit": "*"
     },
     "autoload": {
         "psr-4": {
-            "BlnSoftware\\Subdomains\\": "src"
+            "Blnsoftware\\Subdomains\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "BlnSoftware\\Subdomains\\Tests\\": "tests"
+            "Blnsoftware\\Subdomains\\Test\\": "tests"
         }
-    },
-    "scripts": {
-        "test": "vendor/bin/phpunit",
-        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
-
-    },
-    "config": {
-        "sort-packages": true
     }
 }

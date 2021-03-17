@@ -1,11 +1,9 @@
 # Very short description of the package
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/rcn-capital/subdomains.svg?style=flat-square)](https://packagist.org/packages/rcn-capital/subdomains)
-[![Build Status](https://img.shields.io/travis/rcn-capital/subdomains/master.svg?style=flat-square)](https://travis-ci.org/rcn-capital/subdomains)
-[![Quality Score](https://img.shields.io/scrutinizer/g/rcn-capital/subdomains.svg?style=flat-square)](https://scrutinizer-ci.com/g/rcn-capital/subdomains)
-[![Total Downloads](https://img.shields.io/packagist/dt/rcn-capital/subdomains.svg?style=flat-square)](https://packagist.org/packages/rcn-capital/subdomains)
+[![Latest Version on GitHub](https://img.shields.io/github/v/blnsoftware/cakephp-subdomains.svg?style=flat-square)](https://github.com/blnsoftware/cakephp-subdomains)
+[![Total Downloads](https://img.shields.io/github/dt/blnsoftware/cakephp-subdomains.svg?style=flat-square)](https://github.com/blnsoftware/cakephp-subdomains)
 
-Easily add sub domains to your CakePHP application using route prefixes. Based on package [code](https://github.com/multidimension-al/cakephp-subdomains) adding the possibility to rename folders for subdomains.
+Easily add sub domains to your CakePHP application using route prefixes. Based on package [Multidimensional/Subdomains](https://github.com/multidimension-al/cakephp-subdomains) adding the possibility to rename folders for subdomains.
 
 ## Requirements
 
@@ -17,7 +15,7 @@ Easily add sub domains to your CakePHP application using route prefixes. Based o
 You can install the package via composer:
 
 ```bash
-composer require rcn-capital/subdomains
+composer require blnsoftware/cakephp-subdomains
 ```
 
 ## Setup
@@ -26,13 +24,13 @@ composer require rcn-capital/subdomains
 Load the plugin by running following command in terminal:
 
 ```
-bin/cake plugin load RcnCapital/Subdomains -b -r
+bin/cake plugin load RcnCapital/cakephp-subdomains -b -r
 ```
 
 Or by manually adding following line to your app's `config/bootstrap.php`:
 
 ```php
-Plugin::load('RcnCapital/Subdomains', ['bootstrap' => true, 'routes' => true]);
+Plugin::load('RcnCapital/cakephp-subdomains', ['bootstrap' => true, 'routes' => true]);
 ```
 
 ## Configuration
@@ -45,11 +43,11 @@ bin/cake SubdomainsInstall
 
 This command will allow you to automatically create a configuration file with the list of your subdomains for the plugin to use. You can also run this command to add or delete additional subdomains.
 
-Alternatively, you can create a `config/subdomains.php` file in your main CakePHP config folder:
+Alternatively, you can create a `config/cakephp-subdomains.php` file in your main CakePHP config folder:
 
 ```php
 return [
-    'RcnCapital/Subdomains' => [
+    'RcnCapital/cakephp-subdomains' => [
 		'Subdomains' => [
 			'{SUBDOMAIN_1}', 
 			'{SUBDOMAIN_2}', 
@@ -64,7 +62,7 @@ In case you have a subdomain for testing, you can easily translate that subdomai
 
 ```php
 return [
-    'RcnCapital/Subdomains' => [
+    'RcnCapital/cakephp-subdomains' => [
 		'Subdomains' => [
 			'subdomain1', 
 			'subdomain2', 
@@ -116,7 +114,7 @@ If you discover any security related issues, please email daniel.marjos@bairesde
 
 ## Credits
 
-- [Daniel Marjos](https://github.com/rcn-capital)
+- [Daniel Marjos](https://github.com/blnsoftware)
 - [All Contributors](../../contributors)
 
 ## License

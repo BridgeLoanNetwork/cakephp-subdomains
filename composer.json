@@ -5,7 +5,7 @@
     "keywords": [
 		"cakephp", 
 		"cakephp3",
-        "rcn-capital",
+        "blnsoftware",
         "subdomains"
     ],
     "homepage": "https://github.com/blnsoftware/cakephp-subdomains",
@@ -21,9 +21,6 @@
         "php": ">=5.5.9",
         "cakephp/cakephp": "~3.3"
     },
-	"conflict": {
-		"multidimensional/cakephp-subdomains": "*"
-	},
     "require-dev": {
         "phpunit/phpunit": "*"
     },
@@ -36,13 +33,5 @@
         "psr-4": {
             "Blnsoftware\\Subdomains\\Tests\\": "tests"
         }
-    },
-    "scripts": {
-        "test": "vendor/bin/phpunit",
-        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
-
-    },
-    "config": {
-        "sort-packages": true
     }
 }

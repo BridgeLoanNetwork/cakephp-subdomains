@@ -1,6 +1,7 @@
 {
     "name": "blnsoftware/cakephp-subdomains",
     "description": "Custom Subdomain handling for CakePHP application using route prefixes.",
+    "type": "library",
     "keywords": [
 		"cakephp", 
 		"cakephp3",
@@ -9,7 +10,6 @@
     ],
     "homepage": "https://github.com/blnsoftware/cakephp-subdomains",
     "license": "MIT",
-    "type": "cakephp-plugin",
     "authors": [
         {
             "name": "Daniel Marjos",

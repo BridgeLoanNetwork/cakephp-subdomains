@@ -1,7 +1,7 @@
 {
     "name": "blnsoftware/cakephp-subdomains",
     "description": "Custom Subdomain handling for CakePHP application using route prefixes.",
-    "type": "library",
+    "type": "cakephp-plugin",
     "keywords": [
 		"cakephp", 
 		"cakephp3",

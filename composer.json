@@ -22,7 +22,7 @@
         "cakephp/cakephp": "~3.3"
     },
 	"conflict": {
-		"multidimensional/subdomains": "*"
+		"multidimensional/cakephp-subdomains": "*"
 	},
     "require-dev": {
         "phpunit/phpunit": "*"

@@ -13,12 +13,12 @@
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
 
-namespace BlnSoftware\Subdomains\Shell;
+namespace Blnsoftware\Subdomains\Shell;
 
 use Cake\Core\Configure;
 use Cake\Console\Shell;
 
-use BlnSoftware\Subdomains\Middleware\SubdomainMiddleware;
+use Blnsoftware\Subdomains\Middleware\SubdomainMiddleware;
 
 class SubdomainsInstallShell extends Shell {
     
@@ -26,7 +26,7 @@ class SubdomainsInstallShell extends Shell {
         
         $this->clear();
         
-        $this->helper('BlnSoftware/Subdomains.Header')->output();
+        $this->helper('Blnsoftware/Subdomains.Header')->output();
     
         $subdomains = $this->_getSubdomains();    
         $continue = $this->_runProgram($subdomains);
@@ -107,8 +107,8 @@ class SubdomainsInstallShell extends Shell {
         
     private function _writeConfig($subdomains) {
         
-        Configure::write('BlnSoftware/Subdomains.Subdomains', array_values($subdomains));
-        Configure::dump('subdomains', 'default', ['BlnSoftware/Subdomains']);    
+        Configure::write('Blnsoftware/Subdomains.Subdomains', array_values($subdomains));
+        Configure::dump('subdomains', 'default', ['Blnsoftware/Subdomains']);    
         
     }
     

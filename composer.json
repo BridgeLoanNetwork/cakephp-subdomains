@@ -29,12 +29,12 @@
     },
     "autoload": {
         "psr-4": {
-            "BlnSoftware\\Subdomains\\": "src"
+            "Blnsoftware\\Subdomains\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "BlnSoftware\\Subdomains\\Tests\\": "tests"
+            "Blnsoftware\\Subdomains\\Tests\\": "tests"
         }
     },
     "scripts": {

@@ -13,7 +13,7 @@
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
 
-namespace BlnSoftware\Subdomains\Middleware;
+namespace Blnsoftware\Subdomains\Middleware;
 
 use Cake\Core\Configure;
 
@@ -50,13 +50,13 @@ class SubdomainMiddleware {
 
     public function getSubdomains() {
 
-        $validConfiguration = Configure::check('BlnSoftware/Subdomains.Subdomains');
+        $validConfiguration = Configure::check('Blnsoftware/Subdomains.Subdomains');
 
         if (!$validConfiguration) {
             return [];
         }
 
-        $subdomains = Configure::read('BlnSoftware/Subdomains.Subdomains');
+        $subdomains = Configure::read('Blnsoftware/Subdomains.Subdomains');
 
         if (!is_array($subdomains) || count($subdomains) == 0) {
             return [];
@@ -73,7 +73,7 @@ class SubdomainMiddleware {
         }
 
         if (preg_match('/(.*?)\.([^\/]*\..{2,5})/i', $host, $match)) {
-            $translate=Configure::read('BlnSoftware/Subdomains.SubdomainToPrefix');
+            $translate=Configure::read('Blnsoftware/Subdomains.SubdomainToPrefix');
             if (in_array($match[1], $this->getSubdomains())) {
                 if (isset($translate[$match[1]])) {
                     return [$translate[$match[1]], $match[2]];

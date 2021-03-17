@@ -13,12 +13,12 @@
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
  
-namespace BlnSoftware\Subdomains\Config;
+namespace Blnsoftware\Subdomains\Config;
 
 use Cake\Core\Configure;
 use Cake\Event\EventManager;
 
-use BlnSoftware\Subdomains\Middleware\SubdomainMiddleware;
+use Blnsoftware\Subdomains\Middleware\SubdomainMiddleware;
 
 /*
  *
@@ -32,7 +32,7 @@ $subdomainConfig = array('Subdomains' => NULL);
 if (file_exists(CONFIG . 'subdomains.php')) {
     Configure::load('subdomains');
 } else {
-    Configure::write('BlnSoftware/Subdomains', $subdomainConfig);
+    Configure::write('Blnsoftware/Subdomains', $subdomainConfig);
 }
 
 /*

@@ -13,7 +13,7 @@
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
 
-namespace BlnSoftware\Subdomains\Shell\Helper;
+namespace Blnsoftware\Subdomains\Shell\Helper;
 
 use Cake\Console\Helper;
 

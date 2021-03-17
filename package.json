@@ -1,8 +1,16 @@
 {
     "name": "cakephp-subdomains",
+    "description": "",
     "version": "1.0.0",
     "repository": {
         "type": "git",
         "url": "https://github.com/blnsoftware/cakephp-subdomains.git"
-    }
+    },
+    "keywords": [],
+    "author": "Daniel Marjos <daniel.marjos@ticketnetwork.com>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/blnsoftware/cakephp-subdomains.git"
+    },
+    "homepage": "https://github.com/blnsoftware/cakephp-subdomains.git"
 }

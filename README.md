@@ -1,4 +1,4 @@
-# Very short description of the package
+# CakePHP Subdomain Routing
 
 [![Latest Version on GitHub](https://img.shields.io/github/package-json/v/blnsoftware/cakephp-subdomains.svg?style=flat-square)](https://github.com/blnsoftware/cakephp-subdomains)
 
@@ -23,13 +23,13 @@ composer require blnsoftware/cakephp-subdomains
 Load the plugin by running following command in terminal:
 
 ```
-bin/cake plugin load RcnCapital/cakephp-subdomains -b -r
+bin/cake plugin load BlnSoftware/cakephp-subdomains -b -r
 ```
 
 Or by manually adding following line to your app's `config/bootstrap.php`:
 
 ```php
-Plugin::load('RcnCapital/cakephp-subdomains', ['bootstrap' => true, 'routes' => true]);
+Plugin::load('BlnSoftware/cakephp-subdomains', ['bootstrap' => true, 'routes' => true]);
 ```
 
 ## Configuration
@@ -42,11 +42,11 @@ bin/cake SubdomainsInstall
 
 This command will allow you to automatically create a configuration file with the list of your subdomains for the plugin to use. You can also run this command to add or delete additional subdomains.
 
-Alternatively, you can create a `config/cakephp-subdomains.php` file in your main CakePHP config folder:
+Alternatively, you can create a `config/subdomains.php` file in your main CakePHP config folder:
 
 ```php
 return [
-    'RcnCapital/cakephp-subdomains' => [
+    'BlnSoftware/subdomains' => [
 		'Subdomains' => [
 			'{SUBDOMAIN_1}', 
 			'{SUBDOMAIN_2}', 
@@ -61,7 +61,7 @@ In case you have a subdomain for testing, you can easily translate that subdomai
 
 ```php
 return [
-    'RcnCapital/cakephp-subdomains' => [
+    'BlnSoftware/subdomains' => [
 		'Subdomains' => [
 			'subdomain1', 
 			'subdomain2', 

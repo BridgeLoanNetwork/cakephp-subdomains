@@ -1,3 +1,8 @@
 {
-    "version": "1.0"
+    "name": "cakephp-subdomains",
+    "version": "1.0",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/blnsoftware/cakephp-subdomains.git"
+    }
 }

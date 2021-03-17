@@ -1,7 +1,6 @@
 # Very short description of the package
 
-[![Latest Version on GitHub](https://img.shields.io/github/v/blnsoftware/cakephp-subdomains.svg?style=flat-square)](https://github.com/blnsoftware/cakephp-subdomains)
-[![Total Downloads](https://img.shields.io/github/dt/blnsoftware/cakephp-subdomains.svg?style=flat-square)](https://github.com/blnsoftware/cakephp-subdomains)
+[![Latest Version on GitHub](https://img.shields.io/github/package-json/v/blnsoftware/cakephp-subdomains.svg?style=flat-square)](https://github.com/blnsoftware/cakephp-subdomains)
 
 Easily add sub domains to your CakePHP application using route prefixes. Based on package [Multidimensional/Subdomains](https://github.com/multidimension-al/cakephp-subdomains) adding the possibility to rename folders for subdomains.
 
@@ -35,7 +34,7 @@ Plugin::load('RcnCapital/cakephp-subdomains', ['bootstrap' => true, 'routes' => 
 
 ## Configuration
 
-Run the installation script command in termainl:
+Run the installation script command in terminal:
 
 ```
 bin/cake SubdomainsInstall
@@ -110,12 +109,11 @@ Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
 
 ### Security
 
-If you discover any security related issues, please email daniel.marjos@bairesdev.com instead of using the issue tracker.
+If you discover any security related issues, please email support@blnsoftware.com instead of using the issue tracker.
 
 ## Credits
 
 - [Daniel Marjos](https://github.com/blnsoftware)
-- [All Contributors](../../contributors)
 
 ## License
 
